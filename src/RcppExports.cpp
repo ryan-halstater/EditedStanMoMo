@@ -16,18 +16,22 @@ RcppExport SEXP _rcpp_module_boot_stan_fit4APCmodel_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4CBDmodel_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4M6model_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4RHmodel_mod();
+RcppExport SEXP _rcpp_module_boot_stan_fit4force_negative_betas_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4leecarter_mod();
+RcppExport SEXP _rcpp_module_boot_stan_fit4leecarter_twowalks_mod();
 
 static const R_CallMethodDef CallEntries[] = {
     {"_rcpp_module_boot_stan_fit4APCmodel_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4APCmodel_mod, 0},
     {"_rcpp_module_boot_stan_fit4CBDmodel_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4CBDmodel_mod, 0},
     {"_rcpp_module_boot_stan_fit4M6model_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4M6model_mod, 0},
     {"_rcpp_module_boot_stan_fit4RHmodel_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4RHmodel_mod, 0},
+    {"_rcpp_module_boot_stan_fit4force_negative_betas_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4force_negative_betas_mod, 0},
     {"_rcpp_module_boot_stan_fit4leecarter_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4leecarter_mod, 0},
+    {"_rcpp_module_boot_stan_fit4leecarter_twowalks_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4leecarter_twowalks_mod, 0},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_StanMoMo(DllInfo *dll) {
+RcppExport void R_init_RHStanMoMoEdit(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }
