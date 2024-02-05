@@ -10,7 +10,7 @@
 #' @docType package
 #' @name EditedStanMoMo-package
 #' @aliases EditedStanMoMo
-#' @useDynLib StanMoMo, .registration = TRUE
+#' @useDynLib EditedStanMoMo, .registration = TRUE
 #' @import methods
 #' @import Rcpp
 #' @importFrom rstan sampling
