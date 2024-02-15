@@ -16,22 +16,30 @@ RcppExport SEXP _rcpp_module_boot_stan_fit4APCmodel_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4CBDmodel_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4M6model_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4RHmodel_mod();
-RcppExport SEXP _rcpp_module_boot_stan_fit4force_negative_betas_mod();
+RcppExport SEXP _rcpp_module_boot_stan_fit4lc_beta_c_sigma_exp_mod();
+RcppExport SEXP _rcpp_module_boot_stan_fit4lc_beta_prior_good_mod();
+RcppExport SEXP _rcpp_module_boot_stan_fit4lc_beta_prior_good_const_tau_mod();
+RcppExport SEXP _rcpp_module_boot_stan_fit4lc_neg_c_mod();
+RcppExport SEXP _rcpp_module_boot_stan_fit4lc_tighter_sig_mod();
+RcppExport SEXP _rcpp_module_boot_stan_fit4lc_two_walks_mod();
 RcppExport SEXP _rcpp_module_boot_stan_fit4leecarter_mod();
-RcppExport SEXP _rcpp_module_boot_stan_fit4leecarter_twowalks_mod();
 
 static const R_CallMethodDef CallEntries[] = {
     {"_rcpp_module_boot_stan_fit4APCmodel_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4APCmodel_mod, 0},
     {"_rcpp_module_boot_stan_fit4CBDmodel_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4CBDmodel_mod, 0},
     {"_rcpp_module_boot_stan_fit4M6model_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4M6model_mod, 0},
     {"_rcpp_module_boot_stan_fit4RHmodel_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4RHmodel_mod, 0},
-    {"_rcpp_module_boot_stan_fit4force_negative_betas_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4force_negative_betas_mod, 0},
+    {"_rcpp_module_boot_stan_fit4lc_beta_c_sigma_exp_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4lc_beta_c_sigma_exp_mod, 0},
+    {"_rcpp_module_boot_stan_fit4lc_beta_prior_good_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4lc_beta_prior_good_mod, 0},
+    {"_rcpp_module_boot_stan_fit4lc_beta_prior_good_const_tau_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4lc_beta_prior_good_const_tau_mod, 0},
+    {"_rcpp_module_boot_stan_fit4lc_neg_c_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4lc_neg_c_mod, 0},
+    {"_rcpp_module_boot_stan_fit4lc_tighter_sig_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4lc_tighter_sig_mod, 0},
+    {"_rcpp_module_boot_stan_fit4lc_two_walks_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4lc_two_walks_mod, 0},
     {"_rcpp_module_boot_stan_fit4leecarter_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4leecarter_mod, 0},
-    {"_rcpp_module_boot_stan_fit4leecarter_twowalks_mod", (DL_FUNC) &_rcpp_module_boot_stan_fit4leecarter_twowalks_mod, 0},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_RHStanMoMoEdit(DllInfo *dll) {
+RcppExport void R_init_StanMoMo(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }
